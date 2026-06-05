@@ -159,17 +159,9 @@
           "allOf": [
             {
               "$ref": "common_types.json#/$defs/FunctionCall"
-            },
-            {
-              "properties": {
-                "callableFrom": {
-                  "description": "Specifies where this function can be invoked from.",
-                  "enum": ["remoteOnly", "clientOrRemote"]
-                }
-              }
             }
           ],
-          "required": ["call", "returnType", "callableFrom"],
+          "required": ["call"],
           "unevaluatedProperties": false
         }
       },
